@@ -1,9 +1,0 @@
-docker build -t backend:latest .
-docker build -t frontend:latest .
-
-docker tag backend:latest hamzaarshad10/backend:latest
-docker push hamzaarshad10/backend:latest
-
-docker tag frontend:latest hamzaarshad10/frontend:latest
-docker push hamzaarshad10/frontend:latest
-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

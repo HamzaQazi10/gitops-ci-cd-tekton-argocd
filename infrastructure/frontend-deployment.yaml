@@ -13,7 +13,7 @@ spec:
         app: react-app
     spec:
       nodeSelector:
-        kubernetes.io/hostname: cluster1-m03
+        kubernetes.io/hostname: minikube-m03
       containers:
       - name: react-app-container
         image: hamzaarshad10/frontend:latest
