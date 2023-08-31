@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: react-app-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: react-app
@@ -12,8 +12,8 @@ spec:
       labels:
         app: react-app
     spec:
-      nodeSelector:
-        kubernetes.io/hostname: minikube-m03
+      #nodeSelector:
+       # kubernetes.io/hostname: minikube-m03
       containers:
       - name: react-app-container
         image: hamzaarshad10/frontend:latest
