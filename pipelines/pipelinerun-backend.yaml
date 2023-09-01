@@ -27,6 +27,8 @@ spec:
     value: hamzaarshad10/backendtest
   - name: repopath 
     value: /apps/backend/Dockerfile
+  - name: buildpath 
+    value: ./apps/backend/
     #/tree/main/apps/front-end
     #/apps/front-end/Dockerfile
     #/apps/front-end/

@@ -13,6 +13,8 @@ spec:
     type: string
   - name: repopath
     type: string
+  - name: buildpath
+    type: string
   workspaces:
   - name: shared-data
   - name: docker-credentials
@@ -38,7 +40,7 @@ spec:
     params:
     - name: IMAGE
       value: $(params.image-reference)
-   # - name: CONTEXT
-    #  value: $(params.repopath)
+    - name: CONTEXT
+      value: $(params.buildpath)
     - name: DOCKERFILE
       value: $(params.repopath)
